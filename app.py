@@ -14,16 +14,16 @@ import sys
 import time
 
 translator = Translator()
-subscription_key = "7c4b279b1aff4de59e35ddbc2f40552a"
-endpoint = "https://abhi-cv-demo.cognitiveservices.azure.com/"
+subscription_key = "Azure CV Subscription Key"
+endpoint = "Azure CV Endpoint"
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 app = Flask(__name__, instance_relative_config=True)
 
-account = 'abhinnsa'  # Azure account name
-key = 'T8R5tYPRsWQTRFzEyDtzw9D87Uk95LLTFE6Rj1kBOQ3sdeGdEhvk7hALvKAUfXDxEMAFWR8Z22st8SlNAqYcIg=='  # Azure Storage account access key
-container = 'pictures'  # Container name
+account = 'Storage Account Name'  # Azure account name
+key = 'Key'  # Azure Storage account access key
+container = 'Container'  # Container name
 
 blob_service = BlockBlobService(account_name=account, account_key=key)
 
